@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <section>
+        <header class="container">
+            <div class="page-header">
+                <div class="logo">  
+                 <a href="Digital Clock.html"><img src="eyeicon.png" width="23" height="17"></a>
+                </div>
+                <input type="checkbox" id="click">
+                <label for="click" class="mainicon">
+                    <div class="menu">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="" class="active" style="--navAni:1">Home</a></li>
+                    <li><a href="https://anggarayoggi.github.io/Aboutmenu-Nishida.github.io/" style="--navAni:2">About</a></li>
+                    <li><a href="https://anggarayoggi.github.io/Aboutmenu-Nishida.github.io/" style="--navAni:4">Portfolio</a></li>
+                    <li><a href="https://wa.link/qixsil" style="--navAni:5">Contact us </a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" id="darkModeToggle">
+                    <i class='bx bxs-moon'></i>
+                </label>           
+            </div>
+        </header>
+        <div class="container">
+            <div class="main">
+                <div class="detail">
+                    <h3>Hi, Im</h3>
+                    <h1><span style="color:#52489C;">Yogi</span> Ang?ara</h1>
+                    <p>A Front end Developer is responsible for implementing the web design HTML, CSS, JavaScript code that can be executed by the browser. They create the interface attractive, responsive, and functional user experience.
+                    </p>            
+                    <div class="social">
+                        <a href="https://discord.com/invite/9bkB8WH2" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/_anggarayogi?igsh=YWZnM201NGJ0MGgz" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/anggarayoggi" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/@yogianggara9476" style="--socialAni:4"><i class='bx bxl-youtube'></i></a>   
+                    </div>
+                </div>
+              </div>
+                <div class="images">
+                    <img src="remove.png"alt="Error" class="img-w">    
+        <script>     
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+</html>
